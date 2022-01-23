@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Welcome to the Jeong's Diary</title>
+    <link rel="stylesheet" href="src/index.css" />
+  </head>
+  <body>
+    <form id="loginFrm" action="home.html">
+      <div>
+        <label for="id">Hello! What's your name?</label>
+        <div class="images">
+          <img src="img/img1.png" /><img src="img/img2.png" />
+        </div>
+      </div>
+      <input
+        type="text"
+        name="id"
+        id="id"
+        style="text-align: center"
+        required
+        maxlength="5"
+      />
+    </form>
+    <script>
+      const form = document.getElementById("loginFrm");
+      const input = document.getElementById("id");
+
+      function saveIdFnc() {
+        const inputVal = input.value;
+        const userName = inputVal.toUpperCase();
+        localStorage.setItem("id", userName);
+      }
+
+      form.addEventListener("submit", saveIdFnc);
+    </script>
+  </body>
+</html>

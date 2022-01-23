@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#loginFrm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+#id {
+  border: none;
+  border-bottom: 3px solid black;
+  width: 40%;
+  margin-top: 15px;
+  font-size: 25px;
+  font-family: "Bungee", cursive;
+  padding-bottom: 8px;
+}
+#id:focus {
+  outline: none;
+}
+#loginFrm label {
+  font-family: "Bungee", cursive;
+  font-size: 50px;
+}
+#loginFrm div {
+  display: flex;
+  align-items: center;
+}
+.images img {
+  width: 180px;
+  height: 180px;
+}
+.images img:last-child {
+  display: none;
+}
+.images:hover img:first-child {
+  display: none;
+}
+.images:hover img:last-child {
+  display: inline-block;
+}
