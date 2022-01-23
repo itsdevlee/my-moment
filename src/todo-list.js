@@ -23,9 +23,7 @@ function paintToDo(newTodo) {
   const span = document.createElement("span");
   span.innerText = newTodo.text;
   const button = document.createElement("button");
-  const i = document.createElement("i");
-  i.classList = "far fa-trash-alt";
-  button.append(i);
+  button.innerText = "❌";
   button.addEventListener("click", deleteToDo);
   li.appendChild(span);
   li.appendChild(button);
