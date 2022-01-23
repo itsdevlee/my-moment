@@ -19,5 +19,5 @@ const img = [
 ];
 const randomImg = Math.floor(Math.random() * img.length) + 1;
 const imgBOX = document.querySelector("#disney img");
-imgBOX.src = `../disney/${randomImg}.gif`;
+imgBOX.src = `disney/${randomImg}.gif`;
 imgBOX.append(disney);
